@@ -1,0 +1,508 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+body{
+  background-color: black;
+}
+
+  .home {
+    height: 100vh;
+    width: 100%;
+    background-color: #101010;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8%;
+    padding-left: 8%;
+    background-color: #191919;
+    border-bottom: 1px solid blue;
+  }
+  .logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  span {
+    color: blue;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+  }
+  nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: copitalize;
+  }
+  .image {
+    width: 50%;
+    height: 90%;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    transform: rotateY(180deg);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+  }
+  
+  .image img {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 23%;
+    transform: translateX(20%);
+    object-fit: cover; /* Agar gambar sesuai dengan kontainer */
+  }
+  
+  .content {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    transform: translateY(-50%);
+  }
+  h4 {
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  h1 {
+    color: white;
+    font-size: 65px;
+    margin: 20px 0 20px;
+  }
+  h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  .content a {
+    font-size: 20px;
+    background: blue;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    transition: 0.5s;
+    letter-spacing: 3px;
+  }
+  .content a:hover {
+    background: transparent;
+    border: 2px solid blue;
+  }
+  .about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #191919;
+  }
+  .about-me {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about-me img {
+    height: auto;
+    width: 430px;
+    border-radius: 10px;
+    margin-right: 2rem;
+  }
+  .about-text {
+    width: 550px;
+  }
+  .about-text h2 {
+    color: white;
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-bottom: 1px solid blue;
+  }
+  .about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+  }
+  .about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+  }
+  .button {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  .button:hover {
+    background-color: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+  }
+  .service {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0;
+  }
+  .title h2 {
+    color: white;
+    font-size: 75px;
+    width: 100%;
+    margin-bottom: 30px auto;
+    text-align: center;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  .card {
+    height: 365px;
+    width: 270px;
+    padding: 20px 35px;
+    background: #141414;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid blue;
+  }
+  .card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: blue;
+  }
+  .card h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .pra p {
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    text-align: justify;
+  }
+  .pra p a {
+     background-color: blue;
+     color: white;
+     border: 2px solid white;
+     font-weight: bold;
+     padding: 9px 22px;
+     border-radius: 30px;
+  }
+  .pra p a {
+    background-color: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+  }
+  .skills {
+    padding: 50px 20px;
+    background-color: #141414;
+}
+
+.skills .heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.skills .heading::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #3b82f6;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-box {
+    background: var(--bg-color);
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 6px blue;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px blue;
+}
+
+.skill-box i {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.skill-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.skill-box p {
+    font-size: 1em;
+    color: white;
+    line-height: 1.5;
+}
+
+.portofolio {
+  background-color: black;
+}
+
+.portofolio h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.portofolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 5px;
+}
+
+.portofolio-container .portofolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+}
+
+.portofolio-box img {
+  width: 100%;
+  transition: .5s ease;
+}
+
+.portofolio-box:hover img{
+  transform: scale(1.1);
+}
+
+.portofolio-box .portofolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .1), blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+
+.portofolio-box:hover .portofolio-layer {
+  transform: translateY(0);
+}
+
+.portofolio-layer h4{
+  font-size: 2rem;
+  margin-right: 50px;
+  color: black;
+  padding-right: 120px;
+  margin: 20px 0 0 0;
+}
+
+.portofolio-layer p{
+  font-size: 1.1rem;
+  margin: 50px;
+  padding-right: 125px;
+  margin: 0 0 20px 0;
+}
+
+.portofolio-layer a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  margin-right: 110px;
+}
+
+.portofolio-layer a i{
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
+
+.container {
+  min-height: 100vh;
+  background: #08071d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  margin-left: 25%;
+}
+
+.container {
+  width: 670px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px rgb(0,0,0,0,5);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.container form h1 {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 20PX;
+  width: 500PX;
+  text-align: center;
+}
+
+.container form input{
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid #fff;
+}
+
+.tombol{
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+}
+
+
+.container form input::placeholder{
+  color: #ddd;
+}
+
+.container form #lastName{
+  margin-left: 20px;
+}
+
+.container form h4{
+  color: #fff;
+  font-weight: 300;
+  width: 600px;
+  margin-top: 20px;
+}
+
+.container form textarea{
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 80px;
+  max-height: 80px;
+}
+
+textarea::-webkit-scrollbar{
+  width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+  background-color: rgba(194,194,194,0.713);
+}
+
+.container form #button{
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+  width: 100px;
+  padding: 0;
+  margin-right: 500px;
+  margin-bottom: 30px;
+  transition: o.3s;
+}
+
+.container form #button:hover{
+  opacity: 0.7;
+}
+
+.social-links i{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: 0.2rem solid rgb(47, 154, 178);
+  border-radius: 50%;
+  color: rgb(47, 154, 178);
+  margin: 5px 15px 15px 50px;
+  font-size: 1.3rem;
+  transition: 0.2s linear;
+}
+
+.social-links i:hover{
+  scale: 1.3;
+  color: black;
+  background-color: rgb(47, 154, 178);
+  filter: drop-shadow(2px 2px 20px rgb(47, 154, 178));
+}
